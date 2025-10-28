@@ -2,18 +2,17 @@
 
 **Title**: Charity Insight Hub
 
-**Tools Used**: Power BI Desktop, DAX, Power Query, Data Modeling, Data Cleaning & Transformation
+**Tools Used**: Power BI Desktop, DAX, Power Query, Data Modeling, Text File/Data Cleaning & Transformation
 
 **Project Description**: 
 The Charity Insight Hub is an interactive Power BI dashboard designed to analyze charity performance data across England and Wales. It integrates multiple datasets, including charity registrations, financial statements, classifications, trustees, and geographic data, to deliver a single source of truth for monitoring financial health, governance, and sector trends. The project demonstrates advanced Power BI capabilities such as data modeling between seven relational tables, DAX calculations for KPIs, custom visuals for income/expenditure analysis, and decomposition trees for root-cause exploration. It also simulates real-world reporting tasks aligned with a Data Analyst role within an NGO (charity organisation), focusing on income insights, donor segmentation, and transparency in operations.
 
 **Key findings**: 
-
 Over 394K charities were analyzed, with 185K currently registered and 209K removed.
 
-Total reported charity income exceeded £100 billion, with £95 billion in expenditure as at 2025.
+Total reported charity income exceeded £100 billion, with £95 billion in expenditure.
 
-The “Throughout England and Wales” region contributed the largest share of total income (~35%).
+The “Throughout England and Wales” region contributed the largest share of total income (~35%) predominantly from charities with wider geographic scope, larger budgets, national programmes and therefore higher income.
 
 Top-performing charities such as Lloyd’s Register Foundation and The British Council generated incomes exceeding £1 billion each.
 
