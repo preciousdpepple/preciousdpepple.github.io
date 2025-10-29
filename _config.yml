@@ -3,4 +3,5 @@ logo: DA Picture 2.jpg
 description: I’m a data analyst with 4+ years of experience delivering insights across operations, HR, oil and gas, retail and health sectors. With a background in engineering, I specialize in Advanced Excel & Power BI dashboards, SQL-driven reporting, and Excel automation. I turn complex data into clean, actionable stories that drive smart decisions.
 # show_downloads: true
 #google_analytics:
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/dark@v0.2.0
+plugins:  - jekyll-remote-theme
