@@ -35,4 +35,4 @@ KPI Cards: Track total registered vs. removed charities, trustees, and overall i
 
 Interactive Filters: Enable users to explore charities by name, registration status, geographic area, and financial year.
 
-![Charity_Insight_Hub](Charity_Insight_Hub.jpg)
+![Charity_Insight_Hub2](Charity_Insight_Hub2.jpg)
