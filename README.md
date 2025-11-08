@@ -1,4 +1,4 @@
-<div class="project-card">
+<div class="project-card" markdown="1">
 
 ## Project 1
 
@@ -15,7 +15,7 @@ The Charity Insight Hub is an interactive Power BI dashboard designed to analyze
 - Total reported charity income exceeded £100 billion, with £95 billion in expenditure.  
 - The “Throughout England and Wales” region contributed the largest share of total income (~35%).  
 - Top-performing charities such as Lloyd’s Register Foundation and The British Council generated incomes exceeding £1 billion each.  
-- Several charities reported consistent net surpluses, indicating strong financial management.  
+- Several charities reported consistent net surpluses, indicating strong financial management and sustainability.  
 - The most common charity purposes were Education/Training (35%) and General Charitable Purposes (33%).
 
 **Dashboard Overview:**
@@ -26,15 +26,15 @@ The Charity Insight Hub is an interactive Power BI dashboard designed to analyze
 - Age of Charities  
 - Classification Analysis (Donut Chart)  
 - KPI Cards for registered vs removed charities, trustees, and income/expenditure  
-- Interactive Filters for charity name, status, geography, and year  
+- Interactive Filters for charity name, status, geography, and financial year  
 
 ![Charity_Insight_Hub2](/Charity_Insight_Hub2.jpg)
 
 </div>
 
 
-<div class="project-card">
-
+<div class="project-card" markdown="1">
+  
 ## Project 2
 
 **Title:** 2018 – 2025 NHS Hospital Episode Statistics in England  
