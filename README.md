@@ -1,6 +1,6 @@
 <div class="project-card">
 
-## Project 1
+# Project 1
 
 **Title**: Charity Insight Hub
 
@@ -46,7 +46,7 @@ Interactive Filters: Enable users to explore charities by name, registration sta
 
 <div class="project-card">
   
-## Project 2
+# Project 2
 
 **Title**: 2018 - 2025 NHS Hospital Episode Statistics in England
 
