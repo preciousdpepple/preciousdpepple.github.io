@@ -60,3 +60,19 @@ body {
 .wrapper > section small {
   color: #e5e7eb;
 }
+
+/* Project cards on the right-hand (dark) side */
+.wrapper > section .project-card {
+  background: #0b1120;        /* card background */
+  border: 1px solid #374151;  /* subtle border */
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Make sure headings inside cards look good */
+.wrapper > section .project-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
