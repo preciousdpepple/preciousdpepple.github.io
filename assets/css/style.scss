@@ -71,6 +71,10 @@ body {
   box-sizing: border-box;       /* include padding in that width */
 }
 
+.wrapper img {
+  max-width: 100%;
+}
+
 
 /* Make sure headings inside cards look good */
 .wrapper > section .project-card h2 {
