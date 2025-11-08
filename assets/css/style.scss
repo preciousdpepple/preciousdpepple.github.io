@@ -61,15 +61,16 @@ body {
   color: #e5e7eb;
 }
 
-/* Project cards on the right-hand (dark) side */
-.wrapper > section .project-card {
-  background: #0b1120;        /* card background */
-  border: 1px solid #374151;  /* subtle border */
-  border-radius: 8px;
+.project-card {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 12px;          /* keep or change as you like */
   padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  margin: 0 0 2rem 0;           /* no side margins, just space below */
+  width: 100%;                  /* take full width of right-hand column */
+  box-sizing: border-box;       /* include padding in that width */
 }
+
 
 /* Make sure headings inside cards look good */
 .wrapper > section .project-card h2 {
