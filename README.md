@@ -63,7 +63,7 @@ Ensuring all activity fields (FCE, FAE, appointments, DNA, emergency, etc.) were
 
 DAX was then used to build core KPIs and analytical measures, including Total FCE, Total Appointments, Emergency Episodes, Non-Emergency Episodes, DNA Rate % and others. The model demonstrates best practice in star-schema thinking on a single fact table, with measures driving all visuals and slicers (Year and Age_Band) enabling self-service exploration.
 
-Key findings:
+**Key findings**:
 
 Across 2018–2025 there are roughly 939M total appointments, 151M FCEs and 123M FAEs, illustrating the scale of NHS hospital activity.
 
@@ -81,7 +81,7 @@ The emergency share of episodes rises with age, particularly from 70+ upwards, i
 
 A small but visible “Unknown” age band remains, flagged as a data-quality issue that analysts and data owners may wish to address.
 
-Dashboard Overview:
+**Dashboard Overview**:
 
 KPI Cards: Show high-level metrics such as total appointments, DNAs, FCEs, FAEs, DNA %, and A&E % to give an instant snapshot of demand and performance.
 
