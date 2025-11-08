@@ -1,0 +1,50 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* 1. Keep whole page light by default */
+body {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* 2. Left side (photo + bio) stay light */
+.wrapper > header {
+  background: #ffffff;
+  color: #111111;
+  border-right: 1px solid #e5e5e5;
+}
+
+/* Make the profile photo stand out */
+.wrapper > header img {
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
+/* 3. Right side (projects) – dark look */
+.wrapper > section {
+  background: #0b1120;    /* dark navy */
+  color: #f9fafb;         /* light text */
+  padding: 2rem;
+}
+
+/* Links on the dark side */
+.wrapper > section a {
+  color: #38bdf8;
+}
+
+.wrapper > section a:hover {
+  text-decoration: underline;
+}
+
+/* Headings & text on the dark section */
+.wrapper > section h1,
+.wrapper > section h2,
+.wrapper > section h3 {
+  color: #f9fafb;
+}
+
+.wrapper > section p {
+  color: #e5e7eb;
+}
