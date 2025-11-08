@@ -48,3 +48,15 @@ body {
 .wrapper > section p {
   color: #e5e7eb;
 }
+
+/* Make bold labels readable on dark background */
+.wrapper > section strong,
+.wrapper > section b {
+  color: #f9fafb;      /* same light colour as headings */
+}
+
+/* If your grey headings like "Key findings:" use <em> or <small>, brighten them too */
+.wrapper > section em,
+.wrapper > section small {
+  color: #e5e7eb;
+}
