@@ -1,4 +1,6 @@
-# Project 1
+<div class="project-card">
+
+## Project 1
 
 **Title**: Charity Insight Hub
 
@@ -39,10 +41,12 @@ Interactive Filters: Enable users to explore charities by name, registration sta
 
 ![Charity_Insight_Hub2](Charity_Insight_Hub2.jpg)
 
+</div>
 
 
-
-# Project 2
+<div class="project-card">
+  
+## Project 2
 
 **Title**: 2018 - 2025 NHS Hospital Episode Statistics in England
 
@@ -96,3 +100,5 @@ Acuity and Case-Mix by Age Band (100% Stacked Columns): Compares emergency vs no
 Interactive Slicers (Year & Age_Band): Allow users to focus on specific years or age bands, dynamically updating all visuals and KPIs to support scenario-based analysis (e.g. “How did DNAs look for 20–24 year-olds in 2024?”).
 
 ![2018_2025_NHS_HES_by_Age_Group](2018_2025_NHS_HES_by_Age_Group.jpg)
+
+</div>
