@@ -59,14 +59,13 @@ DAX measures were created for:
 
 **Key findings:**
 
-- Across 2018–2025 there are ~939M total appointments, 151M FCEs and 123M FAEs.  
-- Roughly 57M appointments were DNAs, giving an overall DNA rate of ~6%.  
+- Across 2018–2025 there are ~939M appointments, 211M DNAs (DNA % ~22.5%), 233M first-time visits, 151M FCEs, 123M FAEs, and 47M A&E episodes (A&E % ~37.8%).  
 - Emergency episodes account for ~38% of all FAEs, showing the burden of unplanned care.  
-- Demand is highest in older working-age and early older-age groups (60–79).  
-- DNA volumes peak in younger adults (c. 25–44), then decline in older ages.  
+- Demand for appointment is highest in older working-age and early older-age groups (60–79).  
+- DNA volumes peak in younger adults (35–39, 30–34, 40–44, and 25–29), then decline in older ages.  
 - 2020 shows a clear COVID-related dip, with activity exceeding pre-pandemic levels by 2023–2024.  
-- The emergency share of episodes rises sharply from age 70+, indicating higher acuity in older patients.  
-- A small but persistent “Unknown” age band highlights data-quality issues.
+- The emergency share of episodes rises sharply from age 70+, indicating higher acuity in older patients. Meanwhile, Non-emergency episodes are concentrated in older working-age to early-older bands (55–79).
+- There is a small but persistent “Unknown” age band which highlights data-quality issues to be addressed by the NHS in future publications.
 
 **Dashboard Overview:**
 
@@ -74,7 +73,9 @@ DAX measures were created for:
 - **Total DNAs by Age_Band (Column Chart):** Ranks age bands by missed appointments.  
 - **Total Appointments by Age Band (Column Chart):** Shows the life-course profile of demand.  
 - **2018–2025 Appointments, A&E and Non-A&E (Stacked Area Chart):** Reveals COVID dip and recovery.  
-- **Acuity and Case-mix by Age Band (100% Stacked Columns):** Compares emergency vs non-emergency episodes.  
+- **Acuity and Case-mix by Age Band (100% Stacked Columns):** Compares emergency vs non-emergency episodes.
+- **Non-Emergency Episodes by Age Band (donut):** contribution of each age band.
+- **Emergency Episodes by Age Band (treemap):** age bands driving urgent workload.
 - **Interactive Slicers (Year & Age_Band):** Allow scenario-based analysis, e.g. DNAs for 20–24 year-olds in 2024.
 
 ![2018_2025_NHS_HES_by_Age_Group](/2018_2025_NHS_HES_by_Age_Group.jpg)
@@ -169,6 +170,6 @@ A&E %        = DIVIDE([A&E Episodes], [FAEs])
 
 - Quality flags: keep monitoring residual Unknown categories and any non-numeric values introduced in future refreshes.
 
-  ![2018_2025_NHS_HES_by_Age_Group](/2018_2025_NHS_HES_by_Age_Group.jpg)
+  ![2018_2025_NHS_HES_by_Treatment SPEC](/2018_2025_NHS_HES_by_Treatment SPEC.jpg)
 
 </div>
