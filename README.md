@@ -80,3 +80,95 @@ DAX measures were created for:
 ![2018_2025_NHS_HES_by_Age_Group](/2018_2025_NHS_HES_by_Age_Group.jpg)
 
 </div>
+
+<div class="project-card" markdown="1">
+  
+## Project 3
+
+**Title:** 2018–2025 NHS Hospital Episode Statistics — by Treatment Specialty (England)
+
+**Tools Used:** Power BI Desktop, Power Query, DAX, Data Modeling, Excel/CSV Cleaning & Transformation
+
+**Project Description**
+
+Interactive Power BI report analysing 2018–2025 HES activity by Treatment Specialty (England). It brings together appointments, attendance (DNAs vs Attended), A&E episodes, FCEs and FAEs to show where demand and acuity sit by specialty and how they trend over time.
+
+**Data Preparation and Cleaning (Power Query)**
+
+Standardised Treatment_Specialty_Name (trim/case, fix “&” → “&”), unified column names across files.
+
+Coerced activity fields to Whole Number; replaced */—/blanks with 0 where valid.
+
+Kept a single Date column (no Dim Date); used Date instead.
+
+Attended_Appointments (if not supplied) = [Total_Appointments] - [DNA_Appointments].
+
+Removed duplicates on [Date],[Treatment_Specialty_Name].
+
+Row-level checks to ensure Attended + DNA = Total_Appointments and A&E + NonEmergency = FAE.
+
+**Core DAX Measures**
+Appointments = SUM('2018–2025 Treatment_SPEC'[Total_Appointments])
+Attended     = SUM('2018–2025 Treatment_SPEC'[Attended_Appointments])
+DNA          = SUM('2018–2025 Treatment_SPEC'[DNA_Appointments])
+FCEs         = SUM('2018–2025 Treatment_SPEC'[FCE])
+FAEs         = SUM('2018–2025 Treatment_SPEC'[FAE])
+A&E Episodes = SUM('2018–2025 Treatment_SPEC'[A&E_Episodes])
+Attendance % = DIVIDE([Attended], [Appointments])
+DNA %        = DIVIDE([DNA], [Appointments])
+A&E %        = DIVIDE([A&E Episodes], [FAEs])
+
+**KPI Cards:** Appointments, Attended, DNA, A&E, A&E %, FCEs, FAEs.
+– The analysis shows that, overall attendance runs ~77.5% (gauge) with ~211M DNAs across the period.
+
+- Total DNA’s by Specialty (bar): ranks specialties by missed appointments.
+
+- % Appointment Attendance (gauge): gives a quick read of access effectiveness.
+
+- Total Appointments & DNA by Year (clustered columns): highlights volume vs non-attendance trend (COVID dip in 2020, recovery by 2023–24).
+
+- Top Appointments / Attendance / DNA by Specialty (bar with three measures): presents side-by-side workload vs non-attendance.
+
+- Top A&E Episodes by Specialty (donut): General Internal Medicine dominates emergency care; General Surgery and Trauma & Orthopaedics follow; outpatient-heavy specialties (e.g., Ophthalmology) have comparatively small A&E share.
+
+- FAE leaderboard (table): Here, the specialties are ranked by FAE.
+
+- Total A&E, FAE, FCE by Year (line/column): showing acuity and admitted activity over time.
+
+- Total Appointments & A&E by Year (stacked columns): shows relationship between demand and urgent pressure.
+
+**Slicers:** Date (supports single year or multi-year range) and Treatment_Specialty_Name (multi-select). Everything is measure-driven for consistent aggregation.
+
+**Key Findings:**
+
+- Scale of activity: Approximately 939M appointments with 727M attendance and 211M DNAs. The overall attendance rate is around 77.48%, aligned with the gauge card, indicating nearly one in five appointments result in non-attendance.
+
+- Emergency pressure is specialty-skewed. About 47M emergency FAEs; A&E share around 37.8% suggests a substantial proportion of first episodes are unplanned, highlighting pressure on urgent care. General Internal Medicine carries the largest A&E burden (biggest slice in the donut), indicating where urgent pathways and bed capacity matter most.
+
+- Episode dynamics: FCEs (151M) exceed FAEs (123M), consistent with multiple consultant episodes per admission. Day case activity vs ordinary admissions reveals procedural intensity and shifting care models toward same-day treatment in several specialties.
+
+- Elective & outpatient workload sits elsewhere. High-demand specialties include Ophthalmology, Trauma & Orthopaedics, Diagnostics, Physiotherapy, Urology, Cardiology, Dermatology, Gynaecology, Obstetrics, and Midwifery. These specialties also contribute to a large DNA volume, making it the prime candidate for targeted non-attendance interventions (SMS reminders, fast rebooking, virtual pre-ops).
+
+- The “Total DNAs by Specialty” chart shows wide variation (roughly 15M down to 4M), indicating targeted specialties for attendance improvement programs.
+
+- Surgical front door.  General Internal Medicine Service, General Surgery and Trauma & Orthopaedics show high A&E and FAE activity, reflecting trauma and acute surgical inflow—useful for theatre and bed planning.
+
+- Attendance vs DNA gap. With ~77% attendance, reducing DNA by even 1 percentage point at high-volume specialties (Ophthalmology, Trauma & Orthopaedics, Diagnostics, Physiotherapy & Urology Services) yields outsized capacity gains.
+
+- Time trends for A&E, FAE and FCE. Shows a clear 2020 dip during the pandemic, with sustained recovery by 2023–2024 across appointments, FCEs and FAEs. A&E remains comparatively resilient.
+
+- Operational cue. The specialties that dominate FAEs (inpatient/overnight episodes) differ from those that dominate appointments—resource allocation should mirror this split (beds vs clinics).
+
+**Suggested Actions:**
+
+- DNA reduction playbook in Ophthalmology & other high-DNA specialties: automated reminders, digital check-in, short-notice fill lists, cohort-specific messaging should be deployed to improve attendance levels.
+
+- Emergency flow: prioritise Same-Day Emergency Care in General Medicine and standardised pathways in General Surgery / T&O to reduce conversion to admission.
+
+- Capacity planning: align theatre/bed capacity with FAE leaders; align clinic staffing with appointment leaders.
+
+- Quality flags: keep monitoring residual Unknown categories and any non-numeric values introduced in future refreshes.
+
+  ![2018_2025_NHS_HES_by_Age_Group](/2018_2025_NHS_HES_by_Age_Group.jpg)
+
+</div>
