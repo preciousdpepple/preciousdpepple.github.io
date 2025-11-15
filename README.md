@@ -78,7 +78,7 @@ DAX measures were created for:
 - **Emergency Episodes by Age Band (treemap):** age bands driving urgent workload.
 - **Interactive Slicers (Year & Age_Band):** Allow scenario-based analysis, e.g. DNAs for 20–24 year-olds in 2024.
 
-![2018_2025_NHS_HES_by_Age_Group](/2018_2025_NHS_HES_by_Age_Group.jpg)
+![2018_2025_NHS_HES_by_Age_Group3](/2018_2025_NHS_HES_by_Age_Group3.jpg)
 
 </div>
 
@@ -170,6 +170,6 @@ A&E %        = DIVIDE([A&E Episodes], [FAEs])
 
 - Quality flags: keep monitoring residual Unknown categories and any non-numeric values introduced in future refreshes.
 
-  ![2018_2025_NHS_HES_by_Treatment SPEC](/2018_2025_NHS_HES_by_Treatment SPEC.jpg)
+![2018_2025_NHS_HES_by_Treatment SPEC](/2018_2025_NHS_HES_by_Treatment SPEC.jpg)
 
 </div>
