@@ -176,14 +176,18 @@ A&E %        = DIVIDE([A&E Episodes], [FAEs])
 
 <div class="project-card" markdown="1">
   
-##Project 4
-**Title:** 2018–2025 NHS Hospital Episode Statistics — by Providers in England
+## Project 4   
+
+**Title:** 2018–2025 NHS Hospital Episode Statistics — by Providers in England  
+
 **Tools Used:** Power BI Desktop, Power Query, DAX, Data Modeling, Excel/CSV Cleaning & Transformation
 
 **Project Description**
+
 This Power BI dashboard presents an interactive analysis of NHS Hospital Episode Statistics (HES) across England, in 2025, with a focus on performance by individual healthcare providers and CCGs. It integrates total episodes, first attendances, DNAs, elective and non-elective splits, and supports drill-down by date, CCG, and provider. The aim is to illuminate where acute care demand and non-attendance rates are concentrated, reveal month-on-month and provider-level variation, and inform resource optimization.​
 
 **Data Preparation and Cleaning (Power Query)**
+
 Provider and CCG names were standardized (case, spelling, symbol consistency), and numeric fields representing activity (appointments, attendances, DNAs) were coerced to valid integers.
 
 Null, blank, or missing activity data was replaced with zeroes only where logically valid, preventing spurious aggregations.
@@ -193,6 +197,7 @@ Retained a single Date field for temporal analysis and deduplicated records by d
 Validated row-level sums for attendance and DNA against totals, and checked for consistency between acute ordinary and non-elective reporting.
 
 **Core DAX Measures**
+
 Appointments, First Seen, Subsequent Seen, and DNAs: summed using provider-level and CCG-level grouping.
 
 Proportion metrics: Calculated DNA % = DIVIDE([DNA],[Seen]), and elective/non-elective distributions per period.
@@ -202,6 +207,7 @@ Funnel metrics: staged through referrals to first/subsequent attendances, with D
 Monthly time series and provider/CCG segmentation implemented to visualize trends in attendance, DNA, and acute performance.
 
 **KPI Highlights and Chart Insights**
+
 System Scale: Across England, 65.5K providers contributed to 22.6M subspecialty attendances, with a 6.6% DNA rate, 11M first attendances, and ~1.5M DNAs.​
 
 Elective vs Non-Elective: 2.9M elective and 2.5M non-elective activities are tracked, with visual breakdowns by provider (bar chart), showing large site-to-site variation (Manchester University NHS FT and University Hospitals Birmingham NHS FT are key contributors to both streams).
@@ -217,6 +223,7 @@ GP vs Other Referrals: Acute case line chart splits GP and other referral source
 Acute/Elective Mix Insight: Monthly stacked columns display the elective/non-elective mix, with elective activity composing about 39% and non-elective about 54% each month in the sample period.
 
 **Key Findings**
+
 Persistent non-attendance (DNA) rates (~6.6%) and substantial volume of subsequent DNAs (up to 80K in worst-case CCGs) indicate a need for targeted attendance-improvement strategies.
 
 The clear summer dip signals an opportunity for seasonal resourcing or flexible planning.
@@ -227,7 +234,8 @@ Funnel drop-offs show where attrition is highest (post-referral, post-initial at
 
 Acute care remains a substantial share of workload, especially notable in specialty and provider breakdowns.
 
-Suggested Actions
+**Suggested Actions**
+
 Deploy reminder and rebooking strategies, particularly for specialties and CCGs with highest DNAs.
 
 Seasonally adapt elective and acute care capacity, aligning resources with observed summer dips and provider-specific trends.
