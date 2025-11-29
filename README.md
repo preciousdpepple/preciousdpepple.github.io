@@ -208,7 +208,7 @@ Monthly time series and provider/CCG segmentation implemented to visualize trend
 
 **KPI Highlights and Chart Insights**
 
-System Scale: Across England, 65.5K providers contributed to 22.6M subspecialty attendances, with a 6.6% DNA rate, 11M first attendances, and ~1.5M DNAs.​
+System Scale: Across England, 1416 providers contributed to 22.6M subspecialty attendances, with a 6.6% DNA rate, 11M first attendances, and ~1.5M DNAs.​
 
 Elective vs Non-Elective: 2.9M elective and 2.5M non-elective activities are tracked, with visual breakdowns by provider (bar chart), showing large site-to-site variation (Manchester University NHS FT and University Hospitals Birmingham NHS FT are key contributors to both streams).
 
