@@ -170,7 +170,7 @@ A&E %        = DIVIDE([A&E Episodes], [FAEs])
 
 - Quality flags: keep monitoring residual Unknown categories and any non-numeric values introduced in future refreshes.
 
-![2018_2025_NHS_HES_by_Treatment SPEC](/2018_2025_NHS_HES_by_Treatment SPEC.jpg)
+![2018_2025_NHS_HES_by_TreatmentSPEC](/2018_2025_NHS_HES_by_TreatmentSPEC.jpg)
 
 </div>
 
@@ -301,6 +301,6 @@ Maintain regular data refreshes and validation routines to ensure high data inte
 **Conclusion**
 The 2025 data affirms significant regional and organisational disparities in NHS activity volumes. The dashboard remains a vital tool for ongoing monitoring, capacity planning, and targeted intervention strategies to enhance patient flow, optimize resource use, and address demand pressures across England.
 
-![2018_2025_NHS_HES_by_Region v2](/2018_2025_NHS_HES_by_Region v2.jpg)
+![2018_2025_NHS_HES_by_Region2](/2018_2025_NHS_HES_by_Region2.jpg)
 
 </div>
