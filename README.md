@@ -249,3 +249,58 @@ This dashboard delivers data-driven visibility and actionable intelligence for N
 ![2018_2025_NHS_HES_by_Provider](/2018_2025_NHS_HES_by_Provider.jpg)
 
 </div>
+
+<div class="project-card" markdown="1">
+  
+## Project 5   
+**NHS Hospital Episode Statistics by Regions in England for Jan-Dec 2025**
+
+**Overview**
+This Power BI dashboard delivers an interactive, region-level view of NHS Hospital Episode Statistics (HES) across England’s 11 commissioning regions, with a focus on the latest data from January to December 2025. It consolidates elective and non-elective activity, first attendances, DNAs, and acute workloads, enabling detailed drill-downs by date, region, and organisation. This tool supports NHS planners, commissioners, and provider leadership in monitoring demand, identifying pressure points, and making informed operational decisions.
+
+**Data Highlights for 2025**
+Timeframe Covered: January to December 2025
+Regions Covered: All 11 NHS commisioning regions, including North West, London, South East, Midlands, East of England, and others.
+Number of Organisations: Approximately 2,220 NHS trusts and providers, with key contributors identified.
+System Scale: Activity totals in the hundreds of millions, with the largest volume contributions from major teaching and foundation trusts such as NHS Birmingham and Solihull CCG, University Hospitals Birmingham NHS Foundation Trust, Manchester University NHS Foundation, Sheffield Teaching Hospitals NHS Foundation Trust and University College London Hospitals NHS Foundation Trust.
+
+**Key Insights and Trends**
+**Regional and Organisational Contributions**
+London remains the highest-volume region, driven by major providers like Guys and St Thomas' and Imperial College Healthcare, which together contribute roughly 25% of elective and non-elective workloads.
+The North West experienced a notable increase (~8%) in activity, partly attributable to expanding services at trusts like Liverpool University Hospitals.
+The East of England showed a 5% rise in first attendances, largely driven by increased referrals from primary care providers such as Cambridge University Hospitals.
+Regional Variations and Workload Distribution
+Some regions, notably London and South East, exhibit disproportionately high workloads, emphasizing the need for targeted capacity planning.
+A small subset of regions accounts for a large share of daycase activity, with regional elective daycase breakdowns revealing that London and South East dominate these metrics.
+Regional mix analysis indicates regions like Midlands and North East face heavier non-elective and acute burdens compared to elective workloads, guiding resource allocation.
+
+**Organisation-Level Insights**
+The top 10 organisations by workload, including Imperial College Healthcare, Liverpool University Hospitals, and Guy's and St Thomas', continue to dominate overall activity volumes.
+Data quality issues persist with approximately 2.5% of records classified as NA due to missing or unassigned organisation or region data, mostly from outpatient and referral sources lacking explicit attribution. These records are flagged for ongoing validation to improve attribution accuracy.
+
+**Referral and Attendance Dynamics**
+The referral-to-attendance funnel shows that around 15–16% of recorded first and subsequent attendances are classified as DNAs, indicating a significant proportion of activity lost through non‑attendance. Higher DNA volumes are most visible in regions and organisations with larger outpatient workloads, suggesting that high‑throughput settings bear the greatest absolute impact of missed appointments.
+Seasonal patterns are visible in the monthly time‑series, with higher activity in July and softer volumes in December, which can inform capacity and staffing plans.
+Monthly national workload charts show high and stable activity levels with predictable seasonal fluctuations.
+The activity flow funnel underscores significant attrition at early stages, highlighting opportunities for targeted interventions to reduce DNAs.
+Regions with rising activity, like North West, require capacity adjustments aligned with observed trends.
+
+**Data Preparation and Validation**
+The dashboard's data cleaning process involved standardising regional, organisational, and specialty names for consistency.
+Activity fields (elective, non-elective, first seen, DNAs, referrals, subsequent attendances) were validated as whole numbers, with null or blank values treated as zeros or NA where appropriate.
+The dataset maintains a single, validated Date column for accurate time-series analysis.
+Efforts continue to address NA records under the region name, which predominantly involve National Commissioning Hub 1 and 2 with missing regional attribution, to improve data completeness and accuracy.
+
+**Recommendations**
+Prioritise validation and correction of NA records under the organisation and region name columns to ensure accurate attribution of activity.
+Leverage regional and organisational ranking visuals to target high-volume providers for capacity and performance reviews.
+Implement strategies to reduce DNAs, especially in high-volume organisations and regions with significant drop-offs.
+Align capacity planning with detailed regional and monthly workload patterns, considering seasonal effects.
+Maintain regular data refreshes and validation routines to ensure high data integrity for informed decision-making.
+
+**Conclusion**
+The 2025 data affirms significant regional and organisational disparities in NHS activity volumes. The dashboard remains a vital tool for ongoing monitoring, capacity planning, and targeted intervention strategies to enhance patient flow, optimize resource use, and address demand pressures across England.
+
+![2018_2025_NHS_HES_by_Region v2](/2018_2025_NHS_HES_by_Region v2.jpg)
+
+</div>
